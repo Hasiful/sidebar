@@ -1,0 +1,113 @@
+.header_section{
+    background-color: #3db83a;
+    color: #fff;
+    display: flex;
+    box-shadow: 1px 1px 4px rgb(80 114 125 / 40%);
+    min-height: 50px;
+}
+
+.sidebar_section {
+    width: 305px;
+    height: 585px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgb(80 114 125 / 40%);
+    margin-top: 20px;
+    position: relative;
+}
+.sidebar_wrapper{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.sidebar_wrapper::-webkit-scrollbar{
+    width: 0px;
+}
+
+.sidebar_list{}
+.sidebar_list ul{}
+.sidebar_list ul li {
+    padding: 7px 30px 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1;
+}
+.sidebar_list ul li:hover{
+    background:  linear-gradient(
+        to left,
+        #fff,
+        #eef2f4 10%
+      );;
+}
+
+.sidebar_list_left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sidebar_list_thumbnail{
+    height: 32px;
+    width: 32px;
+    display: flex;
+}
+.sidebar_list_thumbnail img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.sidebar_ListProduct_name{}
+.ListProduct_name {
+    font-weight: 400;
+    font-size: 15px;
+    color: grey;
+    width: 100%;
+}
+.ListProduct_Adds{
+    font-size: 13px;
+    color: #464b4f;
+    font-weight: 300;
+    display: flex;
+    width: 100%;
+    min-height: 16px;
+}
+
+.sidebar_list_icon{}
+.sidebar_list_icon span i{
+    display: flex;
+    font-size: 12px;
+    color: rgb(48, 58, 75);
+}
+
+/* 
+====================================
+    hover sidebar style
+====================================
+*/
+
+.Vehicles_sidebar {
+    position: absolute;
+    height: 100%;
+    min-width: 305px;
+    background-color: #fff;
+    border-left: 1px solid #3db83a;
+    top: 0px;
+    right: -100%;
+    display: none;
+    padding-right: 20px;
+}
+.sidebar_list ul li:hover .Vehicles_sidebar{
+    display: block;
+}
+.Vehicles_sidebar ul{}
+.Vehicles_sidebar ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 
+====================================
+    hover sidebar style
+====================================
+*/
